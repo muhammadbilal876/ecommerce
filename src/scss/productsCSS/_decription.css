@@ -1,0 +1,35 @@
+.main-description{
+    width: 88%;
+    overflow: hidden;
+    margin: 100px auto;
+}
+.main-description button{
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 5px solid black;
+    margin: 1px 0px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.dark .main-description button{
+    color: #fff;
+    border: 5px solid #fff;
+}
+.main-description .desc-para{
+    border: 1px solid black;
+    padding: 20px;
+    width: 100%;
+}
+.dark .main-description .desc-para{
+    border: 1px solid #fff;
+}
+.desc-para p{
+    margin-bottom: 20px;
+    font-style: italic;
+}
+@media (max-width: 900px) {
+    .main-description{
+        width: 100%;
+    }
+}

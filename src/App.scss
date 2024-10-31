@@ -1,0 +1,26 @@
+// @import './scss/bootstrap';
+
+// conponents 
+@import './scss/componentCSS/_header.css';
+@import './scss/componentCSS/_footer.css';
+// home
+@import './scss/cssForHome/_hero.css';
+@import './scss/cssForHome/_popular.css';
+@import './scss/cssForHome/_items.css';
+@import './scss/cssForHome/_sold.css';
+@import './scss/cssForHome/_blogItems.css';
+@import './scss/cssForHome/_blog.css';
+// products
+@import './scss/productsCSS/_products.css';
+@import './scss/productsCSS/_brudCrums.css';
+@import './scss/productsCSS/_productDisplay.css';
+@import './scss/productsCSS/_decription.css';
+@import './scss/productsCSS/_relatedProducts.css';
+// category
+@import './scss/category/_category.css';
+// pageNotFound
+@import './scss/pageNotFound/_pageNotFound.css';
+// authentication
+@import './scss/authentication/_login.css';
+// cartitems
+@import './scss/cartItems/_cartItems.css';

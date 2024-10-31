@@ -1,0 +1,8 @@
+.product-pro{
+    padding: 9rem 2rem;
+}
+@media(max-width: 440px) {
+    .product-pro{
+        padding: 9rem 13px;
+    }
+}

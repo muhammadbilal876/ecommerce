@@ -1,0 +1,51 @@
+.popular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.popular-link{
+    display: flex;
+    gap: 50px;
+}
+.popular-link h1{
+    color: #aeacac;
+    cursor: pointer;
+    animation: 1s linear;
+}
+.popular-link h1.act-popular{
+    color: #222;
+}
+.dark .popular-link h1.act-popular{
+    color: #fff;
+}
+
+ /* add responsive */
+@media (max-width: 671px) {
+    .popular-link {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .popular-link h1:nth-child(3) { 
+        grid-column: span 2; 
+        text-align: center; 
+    }
+
+    .act-popular {
+        text-align: center; 
+    }
+}
+@media (max-width: 452px) {
+    .popular-link {
+        display: block;
+        margin: 50px 0px;
+    }
+    .popular-link h1{
+        text-align: center; 
+        margin: 40px 0px;
+    }
+}

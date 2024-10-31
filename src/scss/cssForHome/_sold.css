@@ -1,0 +1,112 @@
+.solde{
+    width: 100%;
+    min-height: 600px;
+    background-color: #f3f2ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sold{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 100%;
+}
+.header h1{
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #7b7b7b;
+}
+.header h1 .act{
+    color: black;
+}
+.image {
+    width: 100%;
+    position: relative;
+}
+.image::after{
+    content: 'sales of $29.99';
+    position: absolute;
+    top: -25px;
+    left: -40px;
+    background: #171717;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.timer{
+    width: 90%;
+}
+.timer h3{
+    color: #ff6969;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.timer h1{
+    line-height: 1.5;
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+.time h4{
+    font-weight: 300;
+}
+.timer button{
+    width: 150px;
+    height: 45px;
+    margin-top: 20px;
+    background: #171717;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: .2s ease;
+}
+.timer button:hover{
+    box-shadow: 0px 0px 5px #171717;
+}
+/* add responsive */
+@media(max-width:960px){
+    .header h1{
+        font-size: 1.5rem;
+    }
+    .image img{
+        width: 60%;
+    }
+    .image::after{
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+    }
+    .timer h1{
+        font-size: 1.9rem;
+    }
+    .solde{
+        padding: 0px 5px;
+    }
+}
+@media(max-width:826px){
+    .image{
+        margin: 20px 0px;
+    }
+    .image::after{
+        top: -25px;
+        left: 80px;
+    }
+    .sold{
+        display: block;
+        text-align: center;
+    }
+}

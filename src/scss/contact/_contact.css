@@ -1,0 +1,97 @@
+.contact{
+    padding: 8rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e8;
+}
+.dark .contact{
+    background-color: #212121;
+}
+.contact-item{
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 3rem;
+    background: linear-gradient(#212121,#212121) padding-box,
+    linear-gradient(145deg, transparent 5%, #e81cff, #40c9ff)border-box;
+    border: 3px solid transparent;
+    animation: contact infinite 1s linear;
+}
+@keyframes contact{
+    0%,100%{
+        background: linear-gradient(#212121,#212121) padding-box,
+        linear-gradient(145deg, transparent top 5%, #e81cff, #40c9ff)border-box;
+    }50%{
+        background: linear-gradient(#212121,#212121) padding-box,
+        linear-gradient(145deg, transparent 15%, #e81cff, #40c9ff)border-box;
+    }
+}
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contact-item h1{
+    text-align: left;
+    color: #fff;
+    position: relative;
+    margin: 30px 0px;
+}
+.contact-item h1::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+}
+.contact-item input{
+    background: transparent;
+    margin: 10px 0px;
+    border: 1px solid #d2d0d0;
+    height: 45px;
+    padding: 15px;
+    border-radius: 20px;
+    color: #fff;
+    transition: .5s ease;
+}
+.contact-item input::placeholder{
+    color: #d2d0d0;
+}
+.contact-item .message{
+    height: 150px;
+}
+.dark .contact-item input[type='submit']{
+    color: #fff;
+}
+.contact-item input[type='submit']:hover{
+    background-color: #fff;
+    border-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+@media(max-width: 531px){
+    .contact-item {
+        width: 400px;
+    }
+}
+@media(max-width: 431px){
+    .contact-item {
+        width: 350px;
+        padding: 0rem 1rem;
+    }
+}
+@media(max-width: 370px){
+    .contact-item {
+        width: 320px;
+    }
+}

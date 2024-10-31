@@ -1,0 +1,8 @@
+p{
+    color: #171717;
+    font-weight: 400;
+    cursor: pointer;
+}
+.dark p{
+    color: #b7b7b7;
+}

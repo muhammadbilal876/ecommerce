@@ -1,0 +1,127 @@
+.login-signup {
+    /* padding: 9rem 0rem; */
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #e8e8e8;
+  }
+  
+  .dark .login-signup {
+    background: #212121;
+  }
+  
+  .signup-reges {
+    width: 450px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-reges h1 {
+    color: royalblue;
+    margin: 15px 0px;
+  }
+  
+  .signup-reges p {
+    margin: 10px 0px;
+    color: #b5b5b5;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  
+  .signup-reges p span {
+    color: royalblue;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  
+  .signup-reges .input-span {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+  }
+  
+  .signup-reges span input {
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid #b5b5b5;
+    margin-bottom: 5px; 
+  }
+  
+  .signup-reges input {
+    margin: 10px 0px; 
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+  }
+  
+  .signup-reges input[type='submit'] {
+    background-color: royalblue;
+    color: #fff;
+    border: none;
+    margin: 15px 0px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .signup-reges input[type='submit']:hover {
+    box-shadow: 0px 0px 10px #b5b5b5;
+  }
+  .qution {
+    text-align: center;
+  }
+  .loder{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: royalblue;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    margin: 15px 0px;
+    font-size: 1rem;
+    border-radius: 15px;
+  }
+  .spinner-grow {
+    text-align: center;
+    width: 30px; 
+    height: 30px; 
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid #3498db; 
+    border-radius: 50%; 
+    animation: spin 1s linear infinite; 
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* add responsive */
+  @media (max-width: 480px) {
+    .signup-reges {
+      width: 370px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .signup-reges {
+      width: 320px;
+      padding: 15px 10px;
+    }
+  }
+  
